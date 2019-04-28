@@ -3,11 +3,24 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <pagea/>
+      <pageb/>
     </div>
     <router-view/>
   </div>
 </template>
 
+<script>
+import pagea from './components/pageb'
+import pageb from './components/pagea'
+  export default {
+    name: 'app',
+    components: {
+      pagea,
+      pageb
+    }
+  }
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
